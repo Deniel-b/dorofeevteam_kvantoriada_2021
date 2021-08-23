@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>RedBot</title>
+    <link rel="stylesheet" href='css/style.css'>
+    <script src="eel.js" type="text/javascript"></script>
+    <link rel="icon" type="image/png" href="/iconOri.png">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container-of-bg">
+            <canvas id="backgroundId"></canvas>
+        </div>
+        <div class="logo-container">
+            <div class="animation">
+                <container id="headerID">
+                    <img class="panelHead" src="assets/img/displayhead.png" alt="">
+                    <img class="imgHead" src="assets/img/logo1.png" alt="DorofeevTeam">
+                    <!--<div class="title titleManip">RedBot</div>-->
+                    <div class="titleManip">OriBot</div>
+                    <div class="title"><a href="https://vk.com/id332378012" target="_blank">DorofeevTeam</a> and SarovTech</div>
+                </container>  
+                <container id="bodyID">
+                    <div class="module1" id="module1">
+                        <img class="display display1"src="assets/img/display-kit1.png" alt="display">
+                        <div class ="title moveTitle">Управление</div>
+                        <div class="btn btn1"><----</div>
+                        <div class="btn btn2"><----</div>
+                        <div class="btn btn3"><----</div>
+                        <div class="btn btn4"><----</div>
+                        <div class="btn btn5">Вверх</div>
+                        <div class="btn btn6">Вниз</div>
+                        <div class="btn btn7">Сброс</div>
+                        <div class="btn btncode">Последовательность</div>
+                        <svg class="savage"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+                        <!-- Stroke ring -->
+                            <circle class="st0" cx="500" cy="500" r="302.8">
+                            <animateTransform attributeType="xml"
+                                                attributeName="transform"
+                                                type="rotate"
+                                                from="0 500 500"
+                                                to="360 500 500"
+                                                dur="100s"
+                                                repeatCount="indefinite"/>
+                            </circle>
+                            <!-- Inner ring -->
+                            <circle class="st1" cx="500" cy="500" r="237.7">
+                                <animateTransform attributeType="xml"
+                                                attributeName="transform"
+                                                type="rotate"
+                                                from="0 500 500"
+                                                to="360 500 500"
+                                                dur="40s"
+                                                repeatCount="indefinite"/>
+                            </circle>
+                            <!-- Outer ring -->
+                            <circle class="st2" cx="500" cy="500" r="366.8" transform="rotate(0 500 500)";>
+                            <animateTransform attributeType="xml"
+                                                attributeName="transform"
+                                                type="rotate"
+                                                from="0 500 500"
+                                                to="-360 500 500"
+                                                dur="50s"
+                                                repeatCount="indefinite"/>
+                            </circle>
+                            <!-- Outer thin ring -->
+                            <circle class="st3" cx="500" cy="500" r="385.1"/>
+                        </svg>
+
+                    </div>
+                    <div class="module2" id="module2">
+                        <img class="display display2"src="assets/img/display-kit2.png" alt="display">
+                        <div class ="title statusText1">Подключение: <div class="statusInfo1">не установлено</div></div>
+                        <div class ="title statusText2">Видео: <div class="statusInfo2">не подключено</div></div>
+                        <div class ="title statusText3">Программа: <div class="statusInfo3">не готова</div></div>
+                        <div class ="title statusText4">Слушание: <div class="statusInfo4">не производится</div></div>
+                        <div class="btn btntop1">Переключить</div>
+                        <div class="btn btntop2">Настройки</div>
+                        <div class="btn btntop3">Инфо</div>
+                        <div class="btn btntop4">Слушание</div>
+                        <img id="browser_video" class="video-image" alt="video" src="http://192.168.0.102:8080/video">
+                    </div>
+                    <div class="infobar" id="infobar">
+                        <div class="infoblock">
+                            <div class ="title textinfo1">
+                                <p>
+                                Приветствую пользователей нашей программы. Данную страницу заполнил один из членов команды DorofeevTeam.
+                                Мы очень рады были участвовать в данной кванториаде, но у нас было мало времени для работы(Из-за определённых
+                                сложившихся проблем... Около 1 недели XD). Ну, мы сделали, что могли. Надеюсь, вам понравится данный эксперемент.
+                                Несмотря на то, что у нас было мало опыта в frontend разработке, нам удалось быстро освоиться и реализовать
+                                1-ю версию дизайна нашей программы. Задумка была сделать интерфейс, который слегка не соответствует современным нормам.
+                                Наша команда верит, что такой интерфейс будет нравится людям! На 1-м этапе мы не планировали делать оптимизацию, поэтому
+                                стоит ограничение. На данный момент лучше всего запускать с разрешением 1900х1024. 
+                                </p>
+                                <p>
+                                    По поводу проблем... Мы просто не могли напечатать манипулятор на 3D принтере в течении месяца(или более) :/
+                                    Итого у нас оставалось всего 1,5 недели. Ну, резултат можете оценить сами ¯\_(ツ)_/¯.
+                                    На наш взгляд задумка очень свежая, дерзкая, технологичная. Если время было бы на нашей стороне, мы бы вообще сделали пушку!
+                                    Поэтому независимо от результата кванториады мы будем продвигаться. В перспективе у нас: опимизация программы, улучшение backend(
+                                    в плане обработки данных. Т.е. Можно будет, к примеру, добавить неограниченное число камер(или какое-то весомое их множество))
+                                    Так же со стороны backendа провели opencv, в дальнейшем можно будет загружать datasetы и распознавать разные объекты.
+                                    Ещё возвожность распознования речи тоже должна быть в плане(на момент создания данной страницы неизвестно, успели ли мы реализовать)
+                                    Перспектив великое множество. Особенно когда движешься в sci-fi стилистике XD. 
+                                </p>
+                                <p id="endinfo">
+                                    Желаем успехов, команда DorofeevTeam!
+                                </p>
+                            </div>
+                        
+                        </div>
+                        <div class="btn btninfoclose" id="btninfoclose">Выход</div>
+                    </div>
+                    <div class="module-setting" id="module-setting">
+                        <img class="displaysetting"src="assets/img/tablsetting.png" alt="display">
+                        <div class="option1">
+                            <div class ="title settingLogo1">Сamera #<div id="setting-page"></div></div>
+                            <div class = "pageText">
+                            <div class ="title" id="campage1">Сamera 1<div id="setting-page"></div></div>
+                            <div class ="title" id="campage2">Сamera 2<div id="setting-page"></div></div>
+                            </div>
+                            <div class ="title settingText1">ip:</div>
+                            <input type="text" name="ipcamera1" id="ipcamera1" class='ipcamera1' placeholder="0.0.0.0" required="">
+                            <button class="settingEnter1">Send</button>
+                            <div class ="title settingText2">port:</div>
+                            <input type="text" name="portcamera1" id="portcamera1" class='portcamera1' placeholder="25565" required="">
+                            <button class="settingEnter2">Send</button>
+                            <div class ="title settingText3">login:</div>
+                            <input type="text" name="logincamera1" id="logincamera1" class='logincamera1' placeholder="login" required="">
+                            <button class="settingEnter3">Send</button>
+                            <div class ="title settingText4">password:</div>
+                            <input type="text" name="passwordcamera1" id="passwordcamera1" class='passwordcamera1' placeholder="password" required="">
+                            <button class="settingEnter4">Send</button>
+                        </div>
+                        <img class="qrcode1"src="assets/img/qrman.png" alt="qr">
+                        <div class ="title qrtext">IP webcam(google play link)</div>
+                </container>
+            </div>
+        </div>
+    </div>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async src="script/script.js" type="text/javascript"></script>
+    <script async src="script/py.js" type="text/javascript"></script>
+</body>
+</html>
